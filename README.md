@@ -4,7 +4,7 @@ A proposed redesign of [sogoairsoft.com](https://www.sogoairsoft.com/), built as
 
 ## What this is
 
-- 6 pages: home, play, parties, pricing, shop, contact
+- 7 pages: home, play (Ozark indoor), rock (Bolivar outdoor), parties, pricing, shop, contact
 - Fully responsive (mobile-first)
 - No build step, no JavaScript framework, no database
 - All content sourced from publicly available info (current sogoairsoft.com, Yelp, Groupon, BBB, Springfield Business Journal, Facebook)
@@ -33,8 +33,9 @@ python3 -m http.server 8080
 
 ```
 sogo-airsoft-demo/
-├── index.html          # Home — hero, activity tiles, schedule preview, hours
-├── play.html           # Block play schedule, game types, rules, what to bring
+├── index.html          # Home — hero, activity tiles, two-locations split, schedule preview, hours
+├── play.html           # Ozark CQB: block play schedule, game types, rules, what to bring
+├── rock.html           # The Rock: outdoor 80-acre quarry in Bolivar — terrain, FPS tiers, events
 ├── parties.html        # Private parties (Nerf, Gel, Airsoft, Paint), FAQ
 ├── pricing.html        # Block play, open play, rentals, party rates
 ├── shop.html           # Retail categories + tech services
