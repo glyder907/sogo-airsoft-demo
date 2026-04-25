@@ -52,7 +52,10 @@ tailwind.config = { theme: { extend: { fontFamily: { display: ['Anton','Impact',
 
 <!-- Page hero -->
 <section class="relative bg-ink text-white overflow-hidden">
-  <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 30% 50%, #f97316 0%, transparent 40%);"></div>
+  <div class="absolute inset-0">
+    <img src="images/sogo/group.jpg" alt="Group of masked airsoft players celebrating after a So Go event" class="w-full h-full object-cover opacity-30">
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/50"></div>
   <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, white 0, white 1px, transparent 0, transparent 50%); background-size: 12px 12px;"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
     <p class="text-flame font-bold uppercase tracking-widest text-sm mb-3">Private Parties</p>
@@ -70,9 +73,13 @@ tailwind.config = { theme: { extend: { fontFamily: { display: ['Anton','Impact',
 
     <div class="grid md:grid-cols-2 gap-6">
       <!-- Nerf Party -->
-      <article class="bg-zinc-50 rounded-lg p-8 border border-zinc-200 hover:border-flame transition">
-        <div class="flex items-baseline justify-between mb-4">
-          <h3 class="font-display text-3xl uppercase tracking-wide">Nerf Party</h3>
+      <article class="bg-zinc-50 rounded-lg overflow-hidden border border-zinc-200 hover:border-flame transition flex flex-col">
+        <div class="aspect-video bg-ink overflow-hidden">
+          <img src="images/sogo/nerf.png" alt="Players using Nerf blasters inside the So Go family bay" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex items-baseline justify-between mb-4">
+            <h3 class="font-display text-3xl uppercase tracking-wide">Nerf Party</h3>
           <span class="bg-flame text-black px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Ages 4+</span>
         </div>
         <p class="text-zinc-700 mb-6">Foam-dart battles in our family bay. The most popular birthday at So Go for a reason — it's chaos in the best way, and nobody goes home with a welt.</p>
@@ -83,12 +90,17 @@ tailwind.config = { theme: { extend: { fontFamily: { display: ['Anton','Impact',
           <li>• First-timers who aren't sure</li>
         </ul>
         <a href="tel:+14174852579" class="text-flame font-bold uppercase tracking-wider text-sm hover:underline">Reserve Yours →</a>
+        </div>
       </article>
 
       <!-- Gel Blaster Party -->
-      <article class="bg-zinc-50 rounded-lg p-8 border border-zinc-200 hover:border-flame transition">
-        <div class="flex items-baseline justify-between mb-4">
-          <h3 class="font-display text-3xl uppercase tracking-wide">Gel Blaster Party</h3>
+      <article class="bg-zinc-50 rounded-lg overflow-hidden border border-zinc-200 hover:border-flame transition flex flex-col">
+        <div class="aspect-video bg-ink overflow-hidden">
+          <img src="images/sogo/gel-blasters.png" alt="Player in a face mask carrying a gel blaster on the indoor course" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex items-baseline justify-between mb-4">
+            <h3 class="font-display text-3xl uppercase tracking-wide">Gel Blaster Party</h3>
           <span class="bg-flame text-black px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Ages 9+</span>
         </div>
         <p class="text-zinc-700 mb-6">The middle ground between Nerf and Airsoft — water-bead ammo that bursts on impact. Less sting than airsoft, more punch than foam. Tweens love it.</p>
@@ -99,12 +111,17 @@ tailwind.config = { theme: { extend: { fontFamily: { display: ['Anton','Impact',
           <li>• Light-contact, high-action events</li>
         </ul>
         <a href="tel:+14174852579" class="text-flame font-bold uppercase tracking-wider text-sm hover:underline">Reserve Yours →</a>
+        </div>
       </article>
 
       <!-- Airsoft Party -->
-      <article class="bg-zinc-50 rounded-lg p-8 border border-zinc-200 hover:border-flame transition">
-        <div class="flex items-baseline justify-between mb-4">
-          <h3 class="font-display text-3xl uppercase tracking-wide">Airsoft Party</h3>
+      <article class="bg-zinc-50 rounded-lg overflow-hidden border border-zinc-200 hover:border-flame transition flex flex-col">
+        <div class="aspect-video bg-ink overflow-hidden">
+          <img src="images/sogo/cqb-playing.jpg" alt="Two players in close-quarters airsoft combat inside the warehouse" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex items-baseline justify-between mb-4">
+            <h3 class="font-display text-3xl uppercase tracking-wide">Airsoft Party</h3>
           <span class="bg-flame text-black px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Ages 12+</span>
         </div>
         <p class="text-zinc-700 mb-6">Real CQB on our full arena. 6mm BBs, sub-340 FPS, sealed eye-pro and full-face masks for under-18s. Birthdays, bachelor parties, team-building, you name it.</p>
@@ -115,12 +132,17 @@ tailwind.config = { theme: { extend: { fontFamily: { display: ['Anton','Impact',
           <li>• Bachelor / bachelorette parties</li>
         </ul>
         <a href="tel:+14174852579" class="text-flame font-bold uppercase tracking-wider text-sm hover:underline">Reserve Yours →</a>
+        </div>
       </article>
 
       <!-- Paint Party -->
-      <article class="bg-zinc-50 rounded-lg p-8 border border-zinc-200 hover:border-flame transition">
-        <div class="flex items-baseline justify-between mb-4">
-          <h3 class="font-display text-3xl uppercase tracking-wide">Paint Party</h3>
+      <article class="bg-zinc-50 rounded-lg overflow-hidden border border-zinc-200 hover:border-flame transition flex flex-col">
+        <div class="aspect-video bg-ink overflow-hidden">
+          <img src="images/sogo/paint-party.png" alt="Hands painting a wooden sign at a So Go paint party" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-8 flex flex-col flex-1">
+          <div class="flex items-baseline justify-between mb-4">
+            <h3 class="font-display text-3xl uppercase tracking-wide">Paint Party</h3>
           <span class="bg-flame text-black px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Ages 9+</span>
         </div>
         <p class="text-zinc-700 mb-6">Some of your guests want to play, some don't. Our studio space hosts guided paint events alongside the arena, so the whole crew has somewhere to be.</p>
@@ -131,6 +153,7 @@ tailwind.config = { theme: { extend: { fontFamily: { display: ['Anton','Impact',
           <li>• Ladies' nights and craft events</li>
         </ul>
         <a href="tel:+14174852579" class="text-flame font-bold uppercase tracking-wider text-sm hover:underline">Reserve Yours →</a>
+        </div>
       </article>
     </div>
   </div>
