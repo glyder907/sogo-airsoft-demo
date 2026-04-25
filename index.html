@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>So Go Airsoft — Ozark, MO · Indoor Airsoft, Nerf, Gel Blasters & Parties</title>
+<meta name="description" content="Missouri's original indoor airsoft arena. Two warehouses, six days a week, ages 4 to adult. Airsoft CQB, Nerf Wars, Gel Blasters, paint parties, and birthday events in Ozark, MO." />
+<meta name="theme-color" content="#0a0a0a" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Impact,sans-serif' font-size='34' fill='%23f97316'%3ESG%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Anton', 'Impact', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        ink: '#0a0a0a',
+        smoke: '#171717',
+        steel: '#262626',
+        flame: '#f97316',
+        ember: '#fb923c',
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-white text-zinc-900 font-sans antialiased">
+
+<!-- Demo banner -->
+<div class="bg-flame text-black text-center text-xs sm:text-sm font-semibold py-2 px-4">
+  DEMO PREVIEW · A proposed redesign of sogoairsoft.com — not the live site.
+</div>
+
+<!-- Header -->
+<header class="bg-ink text-white sticky top-0 z-40 border-b border-steel">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2 group">
+        <span class="font-display text-3xl tracking-wider text-flame group-hover:text-ember transition">SO&nbsp;GO</span>
+        <span class="font-display text-3xl tracking-wider text-white group-hover:text-zinc-300 transition">AIRSOFT</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider">
+        <a href="/play.html" class="hover:text-flame transition">Play</a>
+        <a href="/parties.html" class="hover:text-flame transition">Parties</a>
+        <a href="/pricing.html" class="hover:text-flame transition">Pricing</a>
+        <a href="/shop.html" class="hover:text-flame transition">Shop</a>
+        <a href="/contact.html" class="hover:text-flame transition">Contact</a>
+        <a href="tel:+14174852579" class="bg-flame text-black px-4 py-2 rounded hover:bg-ember transition">417-485-2579</a>
+      </nav>
+      <button id="menuBtn" aria-label="Open menu" class="md:hidden p-2 text-white">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <nav id="mobileNav" class="hidden md:hidden pb-4 space-y-2 text-sm font-semibold uppercase tracking-wider">
+      <a href="/play.html" class="block py-2 hover:text-flame">Play</a>
+      <a href="/parties.html" class="block py-2 hover:text-flame">Parties</a>
+      <a href="/pricing.html" class="block py-2 hover:text-flame">Pricing</a>
+      <a href="/shop.html" class="block py-2 hover:text-flame">Shop</a>
+      <a href="/contact.html" class="block py-2 hover:text-flame">Contact</a>
+      <a href="tel:+14174852579" class="block bg-flame text-black px-4 py-2 rounded text-center mt-2">Call 417-485-2579</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative bg-ink text-white overflow-hidden">
+  <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 50%, #f97316 0%, transparent 40%), radial-gradient(circle at 80% 80%, #fb923c 0%, transparent 30%);"></div>
+  <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, white 0, white 1px, transparent 0, transparent 50%); background-size: 12px 12px;"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-flame/20 border border-flame/40 rounded-full text-flame text-xs font-bold uppercase tracking-widest mb-6">
+        <span class="w-2 h-2 bg-flame rounded-full animate-pulse"></span>
+        Open Today · Ages 4 to Adult
+      </div>
+      <h1 class="font-display text-5xl sm:text-7xl md:text-8xl leading-none tracking-wide uppercase">
+        Ozark's<br/>
+        <span class="text-flame">Original</span><br/>
+        Indoor<br/>
+        Arena
+      </h1>
+      <p class="mt-8 text-lg sm:text-xl text-zinc-300 max-w-2xl">
+        Missouri's first indoor airsoft CQB facility — running strong since 2007.
+        Two connected 4,000 sq ft warehouses. Six days a week. Walk in, gear up, play hard.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="/play.html" class="bg-flame text-black font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-ember transition">
+          See This Week's Games
+        </a>
+        <a href="/parties.html" class="border-2 border-white text-white font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-white hover:text-ink transition">
+          Book a Party
+        </a>
+      </div>
+      <div class="mt-12 flex flex-wrap items-center gap-8 text-sm text-zinc-400">
+        <div class="flex items-center gap-2">
+          <span class="text-flame text-xl">★★★★★</span>
+          <span><strong class="text-white">4.9</strong> · 100+ reviews</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+          <span><strong class="text-white">19 years</strong> in Ozark</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>2012 W Garton Rd · Ozark, MO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Activity tiles -->
+<section class="bg-zinc-50 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <p class="text-flame font-bold uppercase tracking-widest text-sm mb-3">Pick Your Game</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase tracking-wide">Four ways to play</h2>
+      <p class="mt-4 text-zinc-600">From foam darts for first-graders to full-speed CQB for adults — there's a game on the floor for everyone in your group.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Airsoft -->
+      <a href="/play.html" class="group bg-ink text-white rounded-lg p-8 hover:bg-flame hover:text-black transition border border-steel">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs font-bold uppercase tracking-widest opacity-60">Ages 12+</span>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14M9 17V7l9 4-9 4"/></svg>
+        </div>
+        <h3 class="font-display text-3xl uppercase tracking-wide mb-2">Airsoft CQB</h3>
+        <p class="text-sm opacity-80 leading-relaxed">Force-on-force gameplay with 6mm BBs in our indoor arena. Below 340 FPS. Sealed eye-pro required.</p>
+        <p class="mt-6 font-bold text-flame group-hover:text-black uppercase tracking-wider text-sm">View Schedule →</p>
+      </a>
+
+      <!-- Nerf -->
+      <a href="/parties.html" class="group bg-white rounded-lg p-8 hover:bg-flame hover:text-black transition border border-zinc-200">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-zinc-500">Ages 4+</span>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="font-display text-3xl uppercase tracking-wide mb-2">Nerf Wars</h3>
+        <p class="text-sm text-zinc-600 group-hover:text-black leading-relaxed">Foam-dart battles built for kids and families. The most popular birthday party at So Go.</p>
+        <p class="mt-6 font-bold text-flame group-hover:text-black uppercase tracking-wider text-sm">Plan a Party →</p>
+      </a>
+
+      <!-- Gel Blasters -->
+      <a href="/play.html" class="group bg-white rounded-lg p-8 hover:bg-flame hover:text-black transition border border-zinc-200">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-zinc-500">Ages 9+</span>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <h3 class="font-display text-3xl uppercase tracking-wide mb-2">Gel Blasters</h3>
+        <p class="text-sm text-zinc-600 group-hover:text-black leading-relaxed">The middle ground between Nerf and Airsoft. Soft water-bead ammo. Way less sting, all the action.</p>
+        <p class="mt-6 font-bold text-flame group-hover:text-black uppercase tracking-wider text-sm">Learn More →</p>
+      </a>
+
+      <!-- Paint -->
+      <a href="/parties.html" class="group bg-white rounded-lg p-8 hover:bg-flame hover:text-black transition border border-zinc-200">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-zinc-500">Ages 9+</span>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6M5 8l4 4M19 8l-4 4M4 16h16l-2 6H6z"/></svg>
+        </div>
+        <h3 class="font-display text-3xl uppercase tracking-wide mb-2">Paint Parties</h3>
+        <p class="text-sm text-zinc-600 group-hover:text-black leading-relaxed">For the crew that'd rather make than shoot. Studio space for guided paint events alongside the arena.</p>
+        <p class="mt-6 font-bold text-flame group-hover:text-black uppercase tracking-wider text-sm">Book the Studio →</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- This week section -->
+<section class="bg-ink text-white py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-flame font-bold uppercase tracking-widest text-sm mb-3">Block Play</p>
+        <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-wide leading-none">Walk-in nights every Thursday & Saturday</h2>
+        <p class="mt-6 text-zinc-300 text-lg">No reservation needed. Show up with friends, sign the waiver, gear up. We typically run 10–50 players a night across rotating game types: Capture the Flag, VIP Escort, Hostage Rescue, pistol-and-shotgun nights, and our monthly themed scenarios.</p>
+        <a href="/play.html" class="inline-block mt-8 bg-flame text-black font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-ember transition">
+          See Game Types →
+        </a>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-smoke border border-steel rounded-lg p-6 hover:border-flame transition">
+          <div class="flex items-baseline justify-between gap-4">
+            <div>
+              <p class="font-display text-3xl uppercase tracking-wide text-flame">Thursday Block</p>
+              <p class="text-zinc-400 text-sm mt-1">6:00 — 9:00 PM</p>
+            </div>
+            <p class="font-display text-4xl text-white">$20</p>
+          </div>
+          <p class="text-zinc-300 text-sm mt-3">Mid-week run. Lighter crowd, faster rotations.</p>
+        </div>
+        <div class="bg-smoke border border-steel rounded-lg p-6 hover:border-flame transition">
+          <div class="flex items-baseline justify-between gap-4">
+            <div>
+              <p class="font-display text-3xl uppercase tracking-wide text-flame">Saturday Block</p>
+              <p class="text-zinc-400 text-sm mt-1">5:00 — 9:00 PM</p>
+            </div>
+            <p class="font-display text-4xl text-white">$25</p>
+          </div>
+          <p class="text-zinc-300 text-sm mt-3">Our biggest night. Full warehouse, rotating scenarios.</p>
+        </div>
+        <div class="bg-smoke border border-steel rounded-lg p-6">
+          <p class="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-2">Open Play</p>
+          <p class="text-zinc-300 text-sm">Outside block nights, single 20-min games are <strong class="text-white">$5/player</strong>. Call ahead — minimum 4 players. <a href="/pricing.html" class="text-flame hover:underline">See full pricing →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why So Go -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <p class="text-flame font-bold uppercase tracking-widest text-sm mb-3">Why So Go</p>
+      <h2 class="font-display text-4xl sm:text-5xl uppercase tracking-wide">Built for the Ozarks since 2007</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="border-l-4 border-flame pl-6">
+        <h3 class="font-display text-2xl uppercase tracking-wide mb-2">Two warehouses, one floor</h3>
+        <p class="text-zinc-600">8,000 sq ft of indoor combat space — two 4,000 sq ft warehouses joined by a courtyard, configurable for tight-quarters fights or big-group scenarios.</p>
+      </div>
+      <div class="border-l-4 border-flame pl-6">
+        <h3 class="font-display text-2xl uppercase tracking-wide mb-2">Family-first, all ages</h3>
+        <p class="text-zinc-600">Foam darts at four. Gel blasters at nine. Airsoft CQB at twelve. Whatever your kid is ready for, we've got the right format and the right gear.</p>
+      </div>
+      <div class="border-l-4 border-flame pl-6">
+        <h3 class="font-display text-2xl uppercase tracking-wide mb-2">Real safety, run by players</h3>
+        <p class="text-zinc-600">Every gun chronographs below 340 FPS with .20g BBs. Sealed eye-pro is mandatory. Full-face masks for under-18s. We don't cut corners on the things that matter.</p>
+      </div>
+      <div class="border-l-4 border-flame pl-6">
+        <h3 class="font-display text-2xl uppercase tracking-wide mb-2">Retail under one roof</h3>
+        <p class="text-zinc-600">Guns, gear, BBs, batteries, tech support. If you broke it on the field tonight, we've probably got the part on the shelf.</p>
+      </div>
+      <div class="border-l-4 border-flame pl-6">
+        <h3 class="font-display text-2xl uppercase tracking-wide mb-2">Indoor when it counts</h3>
+        <p class="text-zinc-600">Missouri weather doesn't get a vote. We play in the rain, the heat, and the cold — climate-controlled, every night we're open.</p>
+      </div>
+      <div class="border-l-4 border-flame pl-6">
+        <h3 class="font-display text-2xl uppercase tracking-wide mb-2">Outdoor option, too</h3>
+        <p class="text-zinc-600">When you want trees and terrain instead of tight corners, our partner field <em>The Rock</em> in Bolivar runs weekend ops on a full outdoor map.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hours / Location -->
+<section class="bg-zinc-100 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div>
+        <p class="text-flame font-bold uppercase tracking-widest text-sm mb-3">Hours & Location</p>
+        <h2 class="font-display text-4xl sm:text-5xl uppercase tracking-wide mb-6">Find us in Ozark</h2>
+        <p class="text-zinc-700 text-lg mb-6">Just off Highway 65, next to the Tracker plant. Look for the airsoft signage on Garton Road.</p>
+        <address class="not-italic text-zinc-800 text-lg leading-relaxed">
+          <strong>So Go Airsoft</strong><br/>
+          2012 W Garton Rd<br/>
+          Ozark, MO 65721<br/>
+          <a href="tel:+14174852579" class="text-flame font-semibold hover:underline">417-485-2579</a><br/>
+          <a href="mailto:public@sogoairsoft.com" class="text-flame font-semibold hover:underline">public@sogoairsoft.com</a>
+        </address>
+        <a href="/contact.html" class="inline-block mt-8 bg-ink text-white font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-flame hover:text-black transition">
+          Get Directions →
+        </a>
+      </div>
+      <div class="bg-white rounded-lg shadow-sm p-6 border border-zinc-200">
+        <h3 class="font-display text-2xl uppercase tracking-wide mb-4">This Week</h3>
+        <table class="w-full text-zinc-700">
+          <tbody>
+            <tr class="border-b border-zinc-100"><td class="py-3 font-semibold">Monday</td><td class="py-3 text-right">2:00 — 6:00 PM</td></tr>
+            <tr class="border-b border-zinc-100"><td class="py-3 font-semibold text-zinc-400">Tuesday</td><td class="py-3 text-right text-zinc-400">Closed</td></tr>
+            <tr class="border-b border-zinc-100"><td class="py-3 font-semibold">Wednesday</td><td class="py-3 text-right">2:00 — 7:00 PM</td></tr>
+            <tr class="border-b border-zinc-100 bg-flame/5"><td class="py-3 font-semibold">Thursday <span class="ml-1 text-xs bg-flame text-black px-2 py-0.5 rounded uppercase tracking-wider">Block</span></td><td class="py-3 text-right">2:00 — 9:00 PM</td></tr>
+            <tr class="border-b border-zinc-100"><td class="py-3 font-semibold">Friday</td><td class="py-3 text-right">2:00 — 7:00 PM</td></tr>
+            <tr class="border-b border-zinc-100 bg-flame/5"><td class="py-3 font-semibold">Saturday <span class="ml-1 text-xs bg-flame text-black px-2 py-0.5 rounded uppercase tracking-wider">Block</span></td><td class="py-3 text-right">12:00 — 9:00 PM</td></tr>
+            <tr><td class="py-3 font-semibold">Sunday</td><td class="py-3 text-right">2:00 — 6:00 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="bg-flame text-black py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-wide leading-none">Bring the squad. Or just yourself.</h2>
+    <p class="mt-6 text-lg max-w-2xl mx-auto">First time? Walk in on a block night, we'll loan you everything you need and put you in your first game in under ten minutes.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="tel:+14174852579" class="bg-ink text-white font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-smoke transition">Call 417-485-2579</a>
+      <a href="/parties.html" class="bg-white text-ink font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-zinc-200 transition">Book a Private Party</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-ink text-zinc-400 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <p class="font-display text-2xl uppercase tracking-wider"><span class="text-flame">So Go</span> Airsoft</p>
+        <p class="mt-3 text-sm">Missouri's original indoor airsoft arena. Family-owned in Ozark since 2007.</p>
+      </div>
+      <div>
+        <p class="text-white font-bold uppercase tracking-wider text-sm mb-3">Play</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/play.html" class="hover:text-flame">Airsoft</a></li>
+          <li><a href="/parties.html" class="hover:text-flame">Nerf Wars</a></li>
+          <li><a href="/play.html" class="hover:text-flame">Gel Blasters</a></li>
+          <li><a href="/parties.html" class="hover:text-flame">Paint Parties</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white font-bold uppercase tracking-wider text-sm mb-3">Visit</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/contact.html" class="hover:text-flame">Hours & Directions</a></li>
+          <li><a href="/pricing.html" class="hover:text-flame">Pricing</a></li>
+          <li><a href="/shop.html" class="hover:text-flame">Retail Store</a></li>
+          <li><a href="https://www.facebook.com/p/So-Go-Airsoft-100063692404826/" target="_blank" rel="noopener" class="hover:text-flame">Facebook ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white font-bold uppercase tracking-wider text-sm mb-3">Contact</p>
+        <ul class="space-y-2 text-sm">
+          <li>2012 W Garton Rd<br/>Ozark, MO 65721</li>
+          <li><a href="tel:+14174852579" class="hover:text-flame">417-485-2579</a></li>
+          <li><a href="mailto:public@sogoairsoft.com" class="hover:text-flame">public@sogoairsoft.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-steel pt-6 flex flex-wrap justify-between gap-4 text-xs">
+      <p>© <span id="yr">2026</span> So Go Airsoft LLC. All rights reserved.</p>
+      <p>Demo redesign · Not the live site.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileNav').classList.toggle('hidden');
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

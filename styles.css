@@ -1,0 +1,12 @@
+/* So Go Airsoft demo — supplemental styles */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+
+/* Hide focus outlines for mouse users only */
+:focus:not(:focus-visible) { outline: none; }
+:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }
+
+/* Print: hide nav and footer */
+@media print {
+  header, footer, .demo-banner { display: none !important; }
+}
