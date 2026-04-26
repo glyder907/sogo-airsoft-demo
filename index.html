@@ -75,9 +75,16 @@ tailwind.config = {
 <!-- Hero -->
 <section class="relative bg-ink text-white overflow-hidden">
   <div class="absolute inset-0">
-    <img src="images/sogo/sogo-crowd.jpg" alt="Crowd of geared-up players gathered outside the So Go Airsoft CQB2 building on a sunny day" class="w-full h-full object-cover object-center opacity-45">
+    <video
+      autoplay loop muted playsinline preload="auto"
+      poster="images/sogo/sogo-crowd.jpg"
+      class="w-full h-full object-cover object-center opacity-45"
+      aria-label="So Go Airsoft indoor CQB gameplay action — composite of community-shared block-night footage">
+      <source src="images/sogo/indoor-loop.mp4" type="video/mp4">
+      <img src="images/sogo/sogo-crowd.jpg" alt="Players gathered outside the So Go Airsoft CQB2 building" class="w-full h-full object-cover">
+    </video>
   </div>
-  <div class="absolute inset-0 bg-gradient-to-br from-ink via-ink/80 to-ink/40"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-ink via-ink/75 to-ink/35"></div>
   <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 80% 80%, #f97316 0%, transparent 35%);"></div>
   <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, white 0, white 1px, transparent 0, transparent 50%); background-size: 12px 12px;"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
