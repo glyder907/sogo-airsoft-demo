@@ -74,19 +74,17 @@ tailwind.config = {
 
 <!-- Hero -->
 <section class="relative bg-ink text-white overflow-hidden">
-  <div class="absolute inset-0">
-    <video
-      autoplay loop muted playsinline preload="auto"
-      poster="images/sogo/sogo-crowd.jpg"
-      class="w-full h-full object-cover object-center opacity-45"
-      aria-label="So Go Airsoft indoor CQB gameplay action — composite of community-shared block-night footage">
-      <source src="images/sogo/indoor-loop.mp4" type="video/mp4">
-      <img src="images/sogo/sogo-crowd.jpg" alt="Players gathered outside the So Go Airsoft CQB2 building" class="w-full h-full object-cover">
-    </video>
-  </div>
-  <div class="absolute inset-0 bg-gradient-to-br from-ink via-ink/75 to-ink/35"></div>
-  <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 80% 80%, #f97316 0%, transparent 35%);"></div>
-  <div class="absolute inset-0 opacity-[0.04]" style="background-image: repeating-linear-gradient(45deg, white 0, white 1px, transparent 0, transparent 50%); background-size: 12px 12px;"></div>
+  <video
+    autoplay loop muted playsinline preload="auto"
+    poster="images/sogo/sogo-crowd.jpg"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+    aria-label="So Go Airsoft indoor CQB gameplay">
+    <source src="images/sogo/indoor-loop.mp4" type="video/mp4">
+    <img src="images/sogo/sogo-crowd.jpg" alt="Players gathered outside the So Go Airsoft CQB2 building" class="w-full h-full object-cover">
+  </video>
+  <!-- Left-weighted dark gradient — keeps headline readable, video dominates the right side -->
+  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/10"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
     <div class="max-w-3xl">
       <div class="inline-flex items-center gap-2 px-3 py-1 bg-flame/20 border border-flame/40 rounded-full text-flame text-xs font-bold uppercase tracking-widest mb-6">

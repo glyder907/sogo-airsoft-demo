@@ -52,18 +52,17 @@ tailwind.config = { theme: { extend: { fontFamily: { display: ['Anton','Impact',
 
 <!-- Hero -->
 <section class="relative bg-ink text-white overflow-hidden">
-  <div class="absolute inset-0">
-    <video
-      autoplay loop muted playsinline preload="auto"
-      poster="images/rock/drone-loop-poster.jpg"
-      class="w-full h-full object-cover opacity-55"
-      aria-label="Aerial drone footage of The Rock airsoft quarry in Bolivar, MO">
-      <source src="images/rock/drone-loop.mp4" type="video/mp4">
-      <img src="images/rock/the-rock-hero.jpg" alt="Aerial view of The Rock airsoft quarry" class="w-full h-full object-cover">
-    </video>
-  </div>
-  <div class="absolute inset-0 bg-gradient-to-br from-ink via-ink/80 to-ink/30"></div>
-  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 20px 20px;"></div>
+  <video
+    autoplay loop muted playsinline preload="auto"
+    poster="images/rock/drone-loop-poster.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+    aria-label="Aerial drone footage of The Rock airsoft quarry in Bolivar, MO">
+    <source src="images/rock/drone-loop.mp4" type="video/mp4">
+    <img src="images/rock/the-rock-hero.jpg" alt="Aerial view of The Rock airsoft quarry" class="w-full h-full object-cover">
+  </video>
+  <!-- Left-weighted dark gradient — keeps headline readable, drone footage dominates the right side -->
+  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/65 to-ink/5"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
     <div class="max-w-3xl">
       <div class="inline-flex items-center gap-2 px-3 py-1 bg-flame/20 border border-flame/40 rounded-full text-flame text-xs font-bold uppercase tracking-widest mb-6">
